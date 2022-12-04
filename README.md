@@ -16,3 +16,4 @@
 ## Reference Resource
 
 - Happy Coder Self Learning-Python Programming Design: [https://www.coderbridge.com/columns/17739e1d51fe4254b3dc5a1f9813bc0f/info]
+- You can get more detail in this file "Python Final Project-stock price compare.pdf".
