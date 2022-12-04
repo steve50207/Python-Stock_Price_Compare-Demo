@@ -3,7 +3,7 @@
 ## Project Name: stock price compare
 
 ## Project Purpose
-- We can input two of the stock numbers of Taiwan companies, and then we can get a comparison graph which demonstrate the prices of two stocks in a recent year.
+- We can input two of the stock numbers of Taiwan companies, and then we can get a comparison graph which demonstrates the prices of two stocks in a recent year.
 - This project is a good practice to learn how to use the pythons modules such as web crawler, pandas and tinker.
 
 ## How to use this program
