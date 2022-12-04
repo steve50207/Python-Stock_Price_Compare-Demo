@@ -4,7 +4,7 @@
 
 ## Project Purpose
 - We can input two of the stock numbers of Taiwan companies, and then we can get a comparison graph which demonstrates the prices of two stocks in a recent year.
-- This project is a good practice to learn how to use the pythons modules such as web crawler, pandas and tinker.
+- This project is a good practice to learn how to use the pythons modules such as web crawler, pandas and Tkinter.
 
 ## How to use this program
 - Git clone the whole repository.
