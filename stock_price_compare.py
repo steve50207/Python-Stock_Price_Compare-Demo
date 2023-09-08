@@ -1,11 +1,19 @@
 import requests
+# 網頁爬蟲使用，模擬發出 HTTP GET 請求到 server 伺服器端，取得回傳了該網頁的 HTML 內容 
 from bs4 import BeautifulSoup
+# 網頁爬蟲使用，使用 CSS 選擇器來對回傳 HTML 進行解析，取到想要的元素內容資料
 import time
+# 網頁爬蟲使用，設定每次爬取網頁時可以 sleep 休息
 import csv
+# 清理資料與資料格式化，將list(裡面是dict每月資料)，轉成 .csv 檔案來儲存
 import pandas as pd
+# 資料分析，處理csv資料轉成DataFrame
 import matplotlib.pyplot as plt
+# 視覺化，將DataFrame資料繪製成統計圖表
 import tkinter as tk
+# GUI介面，可設定桌面視窗與對應標籤元件
 from PIL import Image, ImageTk
+# 處理圖片，取代tkinter內建Photoimage，ImageTk.Photoimage 建立 tk 圖片物件
 
 #設定網路爬蟲與作圖 function web_crawler_and_plot()
 def web_crawler_and_plot() :
@@ -23,9 +31,9 @@ def web_crawler_and_plot() :
         url = f'https://goodinfo.tw/StockInfo/ShowSaleMonChart.asp?STOCK_ID={stock_id[x]}'
         headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'}
         resp = requests.get(url, headers=headers)
-        resp.encoding = 'utf-8'
-        raw_html = resp.text
-        soup = BeautifulSoup(raw_html, 'html.parser')
+        resp.encoding = 'utf-8'   
+        raw_html = resp.text      
+        soup = BeautifulSoup(raw_html, 'html.parser') 
         performance_list = []
         #抓取對應股票號碼的時間欄位(近12個月,按照時間順序)與收盤價欄位
         for index in range(16, 4, -1):
@@ -61,14 +69,14 @@ def web_crawler_and_plot() :
     result_label.configure(text=result)
     
     #把原圖stonks.png替換成股票比較查詢結果data.png
-    im = Image.open('data.png')
-    image = ImageTk.PhotoImage(im)
+    img = Image.open('data.png')
+    image = ImageTk.PhotoImage(img)     
     figure_label.configure(image=image)
-    figure_label.image=image    
+    figure_label.image=image  
 
 #產生桌面視窗介面    
 window = tk.Tk()
-window.title('Stock Price Search')
+window.title('Stock Price Compare')
 window.geometry('800x600')
 window.configure(background='white')
 
@@ -99,8 +107,8 @@ result_label = tk.Label(window)
 result_label.pack()
 
 #程式執行預設圖片stonks.png
-im = Image.open('stonks.png')
-image = ImageTk.PhotoImage(im)
+img = Image.open('stonks.png')
+image = ImageTk.PhotoImage(img)
 figure_label = tk.Label(window,image=image)
 figure_label.pack()
 
