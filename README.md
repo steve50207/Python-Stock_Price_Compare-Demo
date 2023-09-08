@@ -47,6 +47,3 @@
         - ![image](https://github.com/steve50207/Python-Stock_Price_Comparison-Demo/blob/main/png/%E5%9F%B7%E8%A1%8C%E5%89%8D.PNG)
     - 執行後:
         - ![image](https://github.com/steve50207/Python-Stock_Price_Comparison-Demo/blob/main/png/%E5%9F%B7%E8%A1%8C%E5%BE%8C.PNG)
-
-## 相關連結
-- [線上Python自學課程連結](https://www.coderbridge.com/columns/17739e1d51fe4254b3dc5a1f9813bc0f/info)

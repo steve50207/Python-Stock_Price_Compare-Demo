@@ -36,7 +36,7 @@ def web_crawler_and_plot() :
         soup = BeautifulSoup(raw_html, 'html.parser') 
         performance_list = []
         #抓取對應股票號碼的時間欄位(近12個月,按照時間順序)與收盤價欄位
-        for index in range(16, 4, -1):
+        for index in range(17, 4, -1):
           performance_dict = {}
           performance_dict['date'] = soup.select(f'tr:nth-child({index}) > td:nth-child(1) > nobr')[0].text
           performance_dict[f'{stock_id[x]}'] = soup.select(f'tr:nth-child({index}) > td:nth-child(3) > nobr')[0].text
