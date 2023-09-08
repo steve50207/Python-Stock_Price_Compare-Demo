@@ -9,9 +9,9 @@ import csv
 import pandas as pd
 # 資料分析，處理csv資料轉成DataFrame
 import matplotlib.pyplot as plt
-# 視覺化，將DataFrame資料繪製成統計圖表
+# 資料視覺化，將DataFrame資料繪製成數據圖
 import tkinter as tk
-# GUI介面，可設定桌面視窗與對應標籤元件
+# 圖形化使用者介面（GUI），可設定桌面視窗與對應標籤元件
 from PIL import Image, ImageTk
 # 處理圖片，取代tkinter內建Photoimage，ImageTk.Photoimage 建立 tk 圖片物件
 
