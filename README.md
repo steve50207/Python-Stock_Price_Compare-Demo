@@ -11,14 +11,22 @@
 
 ## 專案使用Ptyhon套件
 - 本次專案有使用到下列Ptyhon套件:
-    - requests:  網頁爬蟲使用，模擬發出 HTTP GET 請求到 server 伺服器端，取得回傳了該網頁的 HTML 內容。
-    - Beautiful Soup: 網頁爬蟲使用，使用 CSS 選擇器來對回傳 HTML 進行解析，取到想要的元素內容資料。
-    - time: 網頁爬蟲使用，設定每次爬取網頁時可以 sleep 休息。
-    - csv: 清理資料與資料格式化，將 list (裡面是 dict 每月資料)轉成 .csv 檔案來儲存。
-    - pandas: 資料分析，處理csv資料轉成DataFrame。
-    - matplotlib.pyplot: 資料視覺化，將DataFrame資料繪製成數據圖。
-    - tkinter: 圖形化使用者介面（GUI），可設定桌面視窗與對應標籤元件。
-    - Image,ImageTk: 處理圖片，取代tkinter內建Photoimage，ImageTk.Photoimage 建立 tk 圖片物件(支援性更佳)。
+    - requests:
+        - 網頁爬蟲使用，模擬發出 HTTP GET 請求到 server 伺服器端，取得回傳了該網頁的 HTML 內容。
+    - Beautiful Soup: 
+        - 網頁爬蟲使用，使用 CSS 選擇器來對回傳 HTML 進行解析，取到想要的元素內容資料。
+    - time: 
+        - 網頁爬蟲使用，設定每次爬取網頁時可以 sleep 休息。
+    - csv: 
+        - 清理資料與資料格式化，將 list (裡面是 dict 每月資料)轉成 .csv 檔案來儲存。
+    - pandas: 
+        - 資料分析，處理csv資料轉成DataFrame。
+    - matplotlib.pyplot: 
+        - 資料視覺化，將DataFrame資料繪製成數據圖。
+    - tkinter: 
+        - 圖形化使用者介面（GUI），可設定桌面視窗與對應標籤元件。
+    - Image,ImageTk: 
+        - 處理圖片，取代tkinter內建Photoimage，ImageTk.Photoimage 建立 tk 圖片物件(支援性更佳)。
 
 ## 專案執行環境
 - 本項專案在下列環境中執行:
