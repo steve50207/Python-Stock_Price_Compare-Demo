@@ -1,4 +1,4 @@
-# Python-Stock_Price_Comparison-Demo
+# Python-Stock_Price_Compare-Demo
 
 ###### tags `Python`
 
@@ -16,8 +16,8 @@
     - time: 網頁爬蟲使用，設定每次爬取網頁時可以 sleep 休息。
     - csv: 清理資料與資料格式化，將 list (裡面是 dict 每月資料)轉成 .csv 檔案來儲存。
     - pandas: 資料分析，處理csv資料轉成DataFrame。
-    - matplotlib.pyplot: 視覺化，將DataFrame資料繪製成數據圖。
-    - tkinter: GUI介面，可設定桌面視窗與對應標籤元件。
+    - matplotlib.pyplot: 資料視覺化，將DataFrame資料繪製成數據圖。
+    - tkinter: 圖形化使用者介面（GUI），可設定桌面視窗與對應標籤元件。
     - Image,ImageTk: 處理圖片，取代tkinter內建Photoimage，ImageTk.Photoimage 建立 tk 圖片物件(支援性更佳)。
 
 ## 專案執行環境
